@@ -36,6 +36,8 @@ Describe any challenges encountered while building the app:
 
 Having to learn about 10 new object APIs...
 
+Sorting out which git installation on which platform was being invoked by Android Studio...
+
 ## License
 
     Copyright 2022 Aaron Wang
