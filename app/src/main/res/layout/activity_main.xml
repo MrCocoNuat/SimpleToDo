@@ -19,7 +19,7 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Press the add button to add a task to the list. \nClick on a task in the list to edit it. \nClick the delete button for a task to delete it."
+        android:text="@string/main_instructions"
         android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
         android:layout_margin="10dp"
         android:clickable="true"
         android:focusable="true"
-        android:contentDescription = "Add Task Button"
+        android:contentDescription = "@string/main_description_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_menu_add" />

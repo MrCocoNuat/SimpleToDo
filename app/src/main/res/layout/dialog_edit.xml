@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
@@ -11,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:ems="10"
-        android:hint="Task Name"
+        android:hint="@string/dialog_name_hint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +23,7 @@
         android:layout_marginStart="60dp"
         android:ems="2"
         android:inputType="textPersonName"
-        android:hint="MM"
+        android:hint="@string/dialog_month_hint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -33,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="/"
+        android:text="@string/dialog_date_separator"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/editTextMonth"
         app:layout_constraintTop_toTopOf="@+id/editTextMonth" />
@@ -46,7 +45,7 @@
         android:layout_marginStart="16dp"
         android:ems="2"
         android:inputType="textPersonName"
-        android:hint="DD"
+        android:hint="@string/dialog_day_hint"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -55,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Due Date"
+        android:text="@string/dialog_date_title"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextDay"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginStart="40dp"
-        android:text="Priority"
+        android:text="@string/dialog_priority_title"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editTextDay"

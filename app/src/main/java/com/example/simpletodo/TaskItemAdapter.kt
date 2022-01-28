@@ -38,19 +38,15 @@ class TaskItemAdapter(val listOfTasks : List<Task>,
 
     // Holds each view in a list element? e.g. textView in a text list item
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        val taskTextView: TextView
-        val dateTextView: TextView
+        val taskTextView: TextView = itemView.findViewById(R.id.taskText)
+        val dateTextView: TextView = itemView.findViewById(R.id.dateText)
         //val doneSwitch: Switch
-        val ratingBarView : RatingBar
-        val deleteButtonView : ImageButton
+        val ratingBarView : RatingBar = itemView.findViewById(R.id.ratingBar2)
+        val deleteButtonView : ImageButton = itemView.findViewById(R.id.deleteButton)
 
         init {
             // pull these references from the input View
-            taskTextView = itemView.findViewById(R.id.taskText)
-            dateTextView = itemView.findViewById(R.id.dateText)
             //doneSwitch = itemView.findViewById(R.id.doneSwitch)
-            ratingBarView = itemView.findViewById(R.id.ratingBar2)
-            deleteButtonView = itemView.findViewById(R.id.deleteButton)
 
             /*
             // long clicking the text does a delete
@@ -120,7 +116,7 @@ class TaskItemAdapter(val listOfTasks : List<Task>,
     // give each view the data (string) it needs
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         // what is the data (Task object)
-        val task = listOfTasks.get(position)
+        val task = listOfTasks[position]
 
         // here is the data, view
         holder.taskTextView.text = task.text

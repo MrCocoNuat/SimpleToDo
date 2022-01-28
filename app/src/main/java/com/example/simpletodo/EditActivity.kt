@@ -25,9 +25,9 @@ class EditActivity : AppCompatActivity() {
         val editTask = findViewById<EditText>(R.id.editTask)
 
         // retrieve the old task text from the bundle
-        val oldTaskText = getIntent().getStringExtra("oldTask")
+        val oldTaskText = intent.getStringExtra("oldTask")
         //and the position number, if -1 then very bad thing happened...
-        val position = getIntent().getIntExtra("position",-1)
+        val position = intent.getIntExtra("position",-1)
         // populate the edit text field
         editTask.setText(oldTaskText)
 

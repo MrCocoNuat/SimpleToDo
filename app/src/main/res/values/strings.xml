@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">SimpleToDo</string>
+    <string name="dialog_name_hint">Task Name</string>
+    <string name="dialog_month_hint">MM</string>
+    <string name="dialog_date_separator">/</string>
+    <string name="dialog_day_hint">DD</string>
+    <string name="dialog_date_title">Due Date</string>
+    <string name="dialog_priority_title">Priority</string>
+    <string name="main_instructions">Press the add button to add a task to the list. \nClick on a task in the list to edit it. \nClick the delete button for a task to delete it.</string>
+    <string name="main_description_button">Add Task Button</string>
+    <string name="item_description_delete_button">Delete Task Button</string>
 </resources>

@@ -90,13 +90,20 @@ class MainActivity : AppCompatActivity() {
 
         // if addMode, position should have no effect
         if (addMode) {
-            val frag = EditDialogFragment(editDialogListener, addMode, -1, "", "", "", 0)
+            val frag = EditDialogFragment(editDialogListener, addMode, "", "", "", 0)
             frag.show(supportFragmentManager, "dialog")
         }
         else{
             val toEdit = listOfTasks[position]
             Log.i("SimpleToDo","dialog called for editing task")
-            val frag = EditDialogFragment(editDialogListener, addMode, position, toEdit.text, toEdit.month, toEdit.day, toEdit.priority)
+            val frag = EditDialogFragment(
+                editDialogListener,
+                addMode,
+                toEdit.text,
+                toEdit.month,
+                toEdit.day,
+                toEdit.priority
+            )
             frag.show(supportFragmentManager, "dialog")
         }
 
@@ -144,7 +151,7 @@ class MainActivity : AppCompatActivity() {
                 //start it up
                 startActivityForResult(i, REQUEST_CODE)
 
-                //wait for that Activity to finish and this Activity's onActivityResult to be autocalled
+                //wait for that Activity to finish and this Activity's onActivityResult to be auto called
                  */
             }
         }
@@ -171,7 +178,7 @@ class MainActivity : AppCompatActivity() {
         rvTasks.layoutManager = LinearLayoutManager(this)
 
 
-        // button and textfield references
+        // button and text field references
         //val button = findViewById<Button>(R.id.button)
         //val inputTextField = findViewById<EditText>(R.id.addTaskField)
         val button2 = findViewById<FloatingActionButton>(R.id.floatingActionButton)
@@ -246,7 +253,7 @@ class MainActivity : AppCompatActivity() {
 
 
     // to get a file
-    fun getDataFile() : File {
+    private fun getDataFile() : File {
         // not exposed to user
 
         //each line is one task,
@@ -256,7 +263,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     // to load tasks from file into list
-    fun load(){
+    private fun load(){
         try {
             val rawBuffer = mutableListOf<String>()
             for (s : String in FileUtils.readLines(getDataFile(), Charset.defaultCharset())){
