@@ -7,6 +7,13 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 
+/*
+ Class pretty much totally deprecated, but kept around for *** LEARNING :D :D :D ***
+ about Intents and Bundles and stuff
+
+ Also applies to the associated layout
+ */
+
 class EditActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

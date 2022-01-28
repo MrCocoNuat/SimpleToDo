@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/aaron/AndroidStudioProjects/SimpleToDo/app/src/main/res/layout/activity_edit.xml" value="0.33" />
-        <entry key="..\:/Users/aaron/AndroidStudioProjects/SimpleToDo/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/aaron/AndroidStudioProjects/SimpleToDo/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/aaron/AndroidStudioProjects/SimpleToDo/app/src/main/res/layout/dialog_edit.xml" value="0.1" />
+        <entry key="..\:/Users/aaron/AndroidStudioProjects/SimpleToDo/app/src/main/res/layout/item_task.xml" value="0.33" />
         <entry key="..\:/Users/aaron/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.17864583333333334" />
       </map>
     </option>
